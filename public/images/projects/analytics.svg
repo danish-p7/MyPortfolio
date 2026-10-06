@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="chart" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- Grid lines -->
+  <line x1="100" y1="100" x2="700" y2="100" stroke="#334155" stroke-dasharray="4 4" />
+  <line x1="100" y1="200" x2="700" y2="200" stroke="#334155" stroke-dasharray="4 4" />
+  <line x1="100" y1="300" x2="700" y2="300" stroke="#334155" stroke-dasharray="4 4" />
+  <line x1="100" y1="400" x2="700" y2="400" stroke="#475569" stroke-width="2" />
+  <!-- Area fill -->
+  <polygon points="100,400 100,280 200,310 300,220 400,260 500,160 600,190 700,120 700,400" fill="url(#chart)" />
+  <!-- Line -->
+  <polyline points="100,280 200,310 300,220 400,260 500,160 600,190 700,120" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Data nodes -->
+  <circle cx="100" cy="280" r="6" fill="#ffffff" stroke="#0284c7" stroke-width="3"/>
+  <circle cx="200" cy="310" r="6" fill="#ffffff" stroke="#0284c7" stroke-width="3"/>
+  <circle cx="300" cy="220" r="6" fill="#ffffff" stroke="#0284c7" stroke-width="3"/>
+  <circle cx="400" cy="260" r="6" fill="#ffffff" stroke="#0284c7" stroke-width="3"/>
+  <circle cx="500" cy="160" r="6" fill="#ffffff" stroke="#0284c7" stroke-width="3"/>
+  <circle cx="600" cy="190" r="6" fill="#ffffff" stroke="#0284c7" stroke-width="3"/>
+  <circle cx="700" cy="120" r="6" fill="#ffffff" stroke="#0284c7" stroke-width="3"/>
+  <!-- Text -->
+  <text x="120" y="80" fill="#f8fafc" font-family="system-ui, sans-serif" font-weight="700" font-size="22">Real-Time Telemetry &amp; Metrics</text>
+  <text x="120" y="110" fill="#94a3b8" font-family="monospace" font-size="14">15k req/sec • Sub-millisecond latency</text>
+</svg>

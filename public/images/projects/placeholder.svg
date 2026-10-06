@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#0f172a"/>
+  <rect x="250" y="150" width="300" height="200" rx="12" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <circle cx="400" cy="230" r="30" fill="#3b82f6" opacity="0.8"/>
+  <text x="400" y="300" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="16" font-weight="600" text-anchor="middle">Project Architecture Preview</text>
+</svg>

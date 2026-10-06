@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-corporate-50/30 text-corporate-900 font-sans antialiased selection:bg-accent-500 selection:text-white;
+  }
+
+  ::selection {
+    background-color: #2563eb;
+    color: #ffffff;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Typography styles for MDX parsed content */
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  @apply text-corporate-900 font-bold tracking-tight;
+}
+
+.prose p {
+  @apply text-corporate-700 leading-relaxed;
+}
+
+.prose code {
+  @apply text-corporate-900 bg-corporate-100 px-1.5 py-0.5 rounded text-sm font-mono font-medium;
+}
+
+.prose pre {
+  @apply bg-corporate-950 text-corporate-100 p-4 rounded-xl overflow-x-auto border border-corporate-800 text-sm font-mono my-6;
+}
+
+.prose pre code {
+  @apply bg-transparent p-0 text-corporate-100;
+}
+
+.prose ul {
+  @apply list-disc list-outside pl-6 space-y-2 text-corporate-700;
+}
+
+.prose ol {
+  @apply list-decimal list-outside pl-6 space-y-2 text-corporate-700;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-accent-600 pl-4 italic text-corporate-600 my-4;
+}
