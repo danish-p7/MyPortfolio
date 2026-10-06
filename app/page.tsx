@@ -160,7 +160,7 @@ export default function HomePage() {
                   external
                   variant="outline"
                   size="lg"
-                  className="bg-amber-900 text-white border-corporate-700 hover:bg-corporate-800"
+                  className="bg-amber-800 text-white border-corporate-700 hover:bg-corporate-800"
                 >
                   Download Resume
                 </Button>
